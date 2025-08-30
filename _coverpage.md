@@ -1,0 +1,12 @@
+![logo](https://cdn.jsdelivr.net/npm/docsify@4/_media/icon.svg)
+
+# 吟诵教程 <small>1.0</small>
+
+> 传承中华文化的瑰宝
+
+- 系统全面的吟诵学习资料
+- 从基础理论到实践技巧
+- 适合各级学习者
+
+[GitHub](https://github.com/)
+[开始阅读](#吟诵教程文档)
