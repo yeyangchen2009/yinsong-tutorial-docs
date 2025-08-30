@@ -1,4 +1,4 @@
-# 吟诵教程文档部署指南
+﻿# 吟诵教程文档部署指南
 
 ## 本地预览
 
@@ -29,26 +29,28 @@ python -m http.server
 
 ### 步骤2：上传文件
 
-将以下文件上传到您的GitHub仓库：
+将所有文档文件上传到GitHub仓库。确保包含以下关键文件：
 - index.html
 - README.md
 - _sidebar.md
 - _coverpage.md
 - .nojekyll
-- 所有的Markdown教程文件（01 - ... 到39 - ...）
+- 所有Markdown教程文件
+- Image文件夹（包含logo图片）
 
-### 步骤3：开启GitHub Pages
+### 步骤3：开启GitHub Pages功能
 
-1. 进入仓库的Settings页面
-2. 在左侧菜单中选择"Pages"
-3. 在"Source"部分，从"Branch"下拉菜单中选择主分支（通常是main或master），然后选择"/(root)"目录
+1. 进入仓库的"Settings"页面
+2. 点击左侧菜单的"Pages"
+3. 在"Source"选项中，选择"main"分支和根目录（/root）
 4. 点击"Save"按钮
-5. 等待几分钟，GitHub Pages就会部署您的文档网站
 
-### 步骤4：访问您的文档网站
+### 步骤4：访问您的网站
 
-部署完成后，您可以通过GitHub提供的URL访问您的文档网站，格式通常是：`https://[您的GitHub用户名].github.io/[仓库名称]`
+等待几分钟后，您的网站将可以通过GitHub Pages提供的URL访问，格式通常为：`https://<您的GitHub用户名>.github.io/<仓库名>/`
 
-## 更新文档
+## 注意事项
 
-要更新文档，只需修改或添加对应的Markdown文件，然后推送到GitHub仓库即可。GitHub Pages会自动更新您的网站。
+- 如果您修改了文档内容，需要将更改提交并推送到GitHub仓库，然后等待GitHub Pages更新
+- 确保所有链接都使用正确的URL编码（特别是包含空格的文件名）
+- .nojekyll文件很重要，它告诉GitHub Pages不要使用Jekyll处理这些文件，这对于docsify网站是必需的
